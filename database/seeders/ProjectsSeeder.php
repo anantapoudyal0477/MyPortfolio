@@ -1,0 +1,144 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+use App\Models\Projects;
+use Illuminate\Support\Str;
+
+
+class ProjectsSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    
+    public function run(): void
+    {
+        $projects = [
+            [
+                "title" => "Food E-commerce Website",
+                "description" => "ASP.NET food ordering system with CRUD and admin panel.",
+                "image_url" => [
+                    "/assets/Images/Food E-commerce Website/1.png",
+                    "/assets/Images/Food E-commerce Website/2.png",
+                    "/assets/Images/Food E-commerce Website/3.png",
+                    "/assets/Images/Food E-commerce Website/4.png",
+                    "/assets/Images/Food E-commerce Website/5.png",
+                ],
+            ],
+            [
+                "title" => "Online Clothing Recommendation System",
+                "description" => "Django-based ML recommendation system using cosine similarity.",
+                "image_url" => [
+                    "/assets/Images/Clothing Recommendation System/1.png",
+                    "/assets/Images/Clothing Recommendation System/2.png",
+                    "/assets/Images/Clothing Recommendation System/3.png",
+                    "/assets/Images/Clothing Recommendation System/4.png",
+                    "/assets/Images/Clothing Recommendation System/5.png",
+                    "/assets/Images/Clothing Recommendation System/6.png",
+                    "/assets/Images/Clothing Recommendation System/7.png",
+                    "/assets/Images/Clothing Recommendation System/8.png",
+                    "/assets/Images/Clothing Recommendation System/9.png",
+                    "/assets/Images/Clothing Recommendation System/10.png",
+                    "/assets/Images/Clothing Recommendation System/11.png",
+                    "/assets/Images/Clothing Recommendation System/12.png",
+                    "/assets/Images/Clothing Recommendation System/13.png",
+                    "/assets/Images/Clothing Recommendation System/14.png",
+                    "/assets/Images/Clothing Recommendation System/15.png",
+                    "/assets/Images/Clothing Recommendation System/16.png",
+                    "/assets/Images/Clothing Recommendation System/17.png",
+                    "/assets/Images/Clothing Recommendation System/18.png",
+                    "/assets/Images/Clothing Recommendation System/19.png",
+                    "/assets/Images/Clothing Recommendation System/20.png",
+                    "/assets/Images/Clothing Recommendation System/21.png",
+                    "/assets/Images/Clothing Recommendation System/22.png", 
+                    "/assets/Images/Clothing Recommendation System/23.png",
+                    "/assets/Images/Clothing Recommendation System/24.png",
+                    "/assets/Images/Clothing Recommendation System/25.png",
+                    "/assets/Images/Clothing Recommendation System/26.png",
+                    "/assets/Images/Clothing Recommendation System/27.png",
+                    "/assets/Images/Clothing Recommendation System/28.png",
+                    "/assets/Images/Clothing Recommendation System/29.png",
+                    "/assets/Images/Clothing Recommendation System/30.png",
+                    "/assets/Images/Clothing Recommendation System/31.png",
+                    "/assets/Images/Clothing Recommendation System/32.png",
+                    "/assets/Images/Clothing Recommendation System/33.png", 
+                    "/assets/Images/Clothing Recommendation System/34.png",
+                    "/assets/Images/Clothing Recommendation System/35.png",
+                    "/assets/Images/Clothing Recommendation System/36.png",
+                ],
+            ],
+            [
+                "title" => "Personal Portfolio Website 1",
+                "description" => "Static portfolio built with HTML, CSS, JS.",
+                "image_url" => [
+                    "/assets/Images/Personal Portfolio Website 1/1.png",
+                    "/assets/Images/Personal Portfolio Website 1/2.png",
+                    "/assets/Images/Personal Portfolio Website 1/3.png",
+                    "/assets/Images/Personal Portfolio Website 1/4.png",
+                ],
+            ],
+            [
+                "title" => "First Laravel Project",
+                "description" => "Laravel learning project covering MVC, routes, and Eloquent.",
+                "image_url" => [
+                    //1 to 28
+                    "/assets/Images/First Laravel Project/1.png",
+                    "/assets/Images/First Laravel Project/2.png",
+                    "/assets/Images/First Laravel Project/3.png",
+                    "/assets/Images/First Laravel Project/4.png",   
+                    "/assets/Images/First Laravel Project/5.png",
+                    "/assets/Images/First Laravel Project/6.png",
+                    "/assets/Images/First Laravel Project/7.png",
+                    "/assets/Images/First Laravel Project/8.png",
+                    "/assets/Images/First Laravel Project/9.png",
+                    "/assets/Images/First Laravel Project/10.png",
+                    "/assets/Images/First Laravel Project/11.png",
+                    "/assets/Images/First Laravel Project/12.png",
+                    "/assets/Images/First Laravel Project/13.png",
+                    "/assets/Images/First Laravel Project/14.png",
+                    "/assets/Images/First Laravel Project/15.png",
+                    "/assets/Images/First Laravel Project/16.png",
+                    "/assets/Images/First Laravel Project/17.png",
+                    "/assets/Images/First Laravel Project/18.png",
+                    "/assets/Images/First Laravel Project/19.png",
+                    "/assets/Images/First Laravel Project/20.png",
+                    "/assets/Images/First Laravel Project/21.png",
+                    "/assets/Images/First Laravel Project/22.png",
+                    "/assets/Images/First Laravel Project/23.png",
+                    "/assets/Images/First Laravel Project/24.png",
+                    "/assets/Images/First Laravel Project/25.png",
+                    "/assets/Images/First Laravel Project/26.png",
+                    "/assets/Images/First Laravel Project/27.png",
+                    "/assets/Images/First Laravel Project/28.png",
+                ],
+            ],
+            [
+                "title" => "Mind Games using MAUI",
+                "description" => "Mobile app with AI-based games like Tic-Tac-Toe and N-Queen.",
+                "image_url" => [
+                    "/assets/Images/Mind Games/1.png",
+                    "/assets/Images/Mind Games/2.png",
+                    "/assets/Images/Mind Games/3.png",
+                    "/assets/Images/Mind Games/4.png",
+                ],
+            ],
+        ];
+
+        foreach ($projects as $project) {
+            Projects::create([
+                'title' => $project['title'],
+                'slug' => Str::slug($project['title']),
+                'short_description' => substr($project['description'], 0, 100),
+                'description' => $project['description'],
+                'image_url' => $project['image_url'],
+                'status' => 'completed',
+                'type' => 'web',
+                'category' => 'personal',
+            ]);
+        }
+        
+    }
+}

@@ -1,0 +1,177 @@
+   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg:      #9a8c8c;
+            --text:    #000000;
+            --muted:   #000000;
+            --border:  #e5e7eb;
+            --accent:  #2563eb;
+            --nav-h:   56px;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            min-height: 100vh;
+        }
+
+        /* Nav */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            height: var(--nav-h);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 32px;
+            background: #9a8c8c;
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+        }
+
+        .nav-brand {
+            font-weight: 500;
+            font-size: 15px;
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 4px;
+        }
+        
+        .ajax-link {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 14px;
+            padding: 6px 12px;
+            border-radius: 6px;
+            transition: color 0.15s, background 0.15s;
+        }
+
+        .ajax-link:hover {
+            color: var(--text);
+            background: var(--border);
+        }
+
+        .ajax-link.active {
+            color: var(--accent);
+        }
+
+        /* Progress bar */
+        #progress {
+            position: fixed;
+            top: 0; left: 0;
+            height: 2px;
+            width: 0%;
+            background: var(--accent);
+            z-index: 9999;
+            transition: width 0.2s ease, opacity 0.3s;
+        }
+
+        /* Content */
+        #app {
+            margin-top: var(--nav-h);
+            padding: 40px 32px;
+            min-height: calc(100vh - var(--nav-h));
+        }
+
+        #app.fade-out { opacity: 0; transition: opacity 0.15s; }
+        #app.fade-in  { opacity: 1; transition: opacity 0.2s; }
+
+        /* Footer */
+        footer {
+            padding: 20px 32px;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
+        ::selection { background: #dbeafe; color: var(--text); }
+
+        @media (max-width: 640px) {
+            nav { padding: 0 16px; }
+            #app { padding: 24px 16px; }
+            footer { padding: 16px; }
+        }
+
+
+        /* ***************************contact css **************************** */
+            .contact-wrap {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    .contact-wrap h1 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 4px;
+    }
+
+    .contact-wrap p {
+        color: var(--muted);
+        font-size: 13px;
+        margin-bottom: 28px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-bottom: 16px;
+    }
+
+    .form-group label {
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--text);
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 9px 12px;
+        font-family: inherit;
+        font-size: 14px;
+        color: var(--text);
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        outline: none;
+        transition: border-color 0.15s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        border-color: var(--accent);
+    }
+
+    .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    .btn-submit {
+        margin-top: 4px;
+        padding: 9px 20px;
+        background: var(--accent);
+        color: #fff;
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 500;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: opacity 0.15s;
+    }
+
+    .btn-submit:hover { opacity: 0.88; }
+    .btn-submit:active { opacity: 0.75; }
