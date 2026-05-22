@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $pageTitle ?? 'Ananta' }}</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -229,7 +230,7 @@
         <a href="{{ route('index') }}" class="ajax-link @if(Route::is('index')) active @endif">Home</a>
         <a href="{{ route('projects') }}" class="ajax-link @if(Route::is('projects')) active @endif">Projects</a>
         <a href="{{ route('contact.index') }}" class="ajax-link @if(Route::is('contact.*')) active @endif">Contact</a>
-        <a href="{{ route('programs') }}" class="ajax-link @if(Route::is('programs')) active @endif">Programs</a>
+        {{-- <a href="{{ route('programs') }}" class="ajax-link @if(Route::is('programs')) active @endif">Programs</a> --}}
     </div>
 
 </nav>

@@ -12,7 +12,7 @@ Route::get('/', [HomeController::class, 'index'])->name("index");
 //route for contact page
 Route::prefix('/contact')->name('contact.')->group(function () {
     Route::get('/', [ContactController::class, 'index'])->name("index");
-    Route::get('/submit', [ContactController::class, 'submit'])->name("submit");
+    Route::post('/submit', [ContactController::class, 'store'])->name("submit");
 });
 
 //route for projects page
