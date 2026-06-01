@@ -3,16 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Courses;
 
-class ProgramController extends Controller
+class CoursesController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('pages.programs.index',[
-            'pageTitle' => 'Programs'
+        $listOfCourses = Courses::all();
+        return view('pages.courses.index',[
+            'pageTitle' => 'Courses',
+            'listOfCourses' => $listOfCourses
         ]);
     }
 
@@ -37,7 +40,15 @@ class ProgramController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $course = Courses::findOrFail($id);
+        $listOfFilesRelatedToCourse = $course->files()
+        
+        ->get();
+        return view('pages.courses.show',[
+            'pageTitle' => $course->name,
+            'course' => $course,
+            'listOfFilesRelatedToCourse' => $listOfFilesRelatedToCourse
+        ]);
     }
 
     /**

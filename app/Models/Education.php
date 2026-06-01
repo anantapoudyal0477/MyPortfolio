@@ -24,4 +24,15 @@ class Education extends Model
         'order',
         'note'
     ];
+    protected $casts = [
+        'institution'=>'string',
+        'affiliation'=>'string',
+        'degree'=>'string',
+        'field_of_study'=>'string',
+        'location'=>'string',
+        'status'=>'string',
+        'gpa'=>'float',
+        'order'=>'integer',
+        'note'=>'string',
+    ];
 }

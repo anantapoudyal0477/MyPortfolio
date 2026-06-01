@@ -26,8 +26,10 @@ class Projects extends Model
         'image_url'
     ];
     protected $casts = [
+        'github_link' => 'encrypted',
+        'live_link' => 'encrypted',
         'technologies_used' => 'array',
         'database_used' => 'array',
-    'image_url' => 'array',
+        'image_url' => 'array',
 ];
 }

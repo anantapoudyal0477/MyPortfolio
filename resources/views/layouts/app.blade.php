@@ -228,9 +228,9 @@
 
     <div class="nav-links" id="navLinks">
         <a href="{{ route('index') }}" class="ajax-link @if(Route::is('index')) active @endif">Home</a>
-        <a href="{{ route('projects') }}" class="ajax-link @if(Route::is('projects')) active @endif">Projects</a>
+        <a href="{{ route('projects.index') }}" class="ajax-link @if(Route::is('projects.*')) active @endif">Projects</a>
         <a href="{{ route('contact.index') }}" class="ajax-link @if(Route::is('contact.*')) active @endif">Contact</a>
-        {{-- <a href="{{ route('programs') }}" class="ajax-link @if(Route::is('programs')) active @endif">Programs</a> --}}
+        <a href="{{ route('courses.index') }}" class="ajax-link @if(Route::is('courses.*')) active @endif">Courses</a>
     </div>
 
 </nav>
@@ -245,9 +245,9 @@
 
         <div class="footer-links">
             <a href="{{ route('index') }}">Home</a>
-            <a href="{{ route('projects') }}">Projects</a>
+            <a href="{{ route('projects.index') }}">Projects</a>
             <a href="{{ route('contact.index') }}">Contact</a>
-            <a href="{{ route('programs') }}">Programs</a>
+            <a href="{{ route('courses.index') }}">Courses</a>
         </div>
 
         <div></div>

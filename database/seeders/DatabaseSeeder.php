@@ -20,6 +20,8 @@ class DatabaseSeeder extends Seeder
             ProjectsSeeder::class,
             EducationSeeder::class,
             ExperienceSeeder::class,
+            CoursesSeeder::class,
+            CourseFileSeeder::class
         ]);
     }
 }
