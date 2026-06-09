@@ -88,15 +88,7 @@
                     @enderror
                 </div>
 
-                <!-- Remember -->
-                <div class="flex items-center justify-between text-sm">
-                    <label class="flex items-center gap-2 text-gray-600">
-                        <input type="checkbox" class="rounded border-gray-300">
-                        Remember me
-                    </label>
-
-                    <a href="#" class="text-indigo-600 hover:underline">Forgot password?</a>
-                </div>
+              
 
                 <!-- Button -->
                 <button
