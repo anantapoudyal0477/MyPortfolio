@@ -141,11 +141,8 @@
                 <div class="course-card ">
 
                     <div class="course-image">
-                        @if (!empty($course->image))
-                            <img src="{{ $course->image }}" alt="{{ $course->name }}">
-                        @else
                             <img src="https://placehold.co/600x400?text={{ urlencode($course->name) }}" alt="{{ $course->name }}">
-                        @endif
+                       
 
                     </div>
 

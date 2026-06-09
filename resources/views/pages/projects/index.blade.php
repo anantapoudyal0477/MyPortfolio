@@ -181,8 +181,14 @@
                         <div class="modal-slider-{{ $project->id }}"
                             style="display:flex;transition:transform .4s ease;">
                             @foreach ($project->image_url as $img)
-                                <img src="{{ $img }}"
-                                    style="width:100%;flex-shrink:0;object-fit:cover;max-height:400px;">
+                               <img src="{{ $img }}"
+     style="
+        width:100%;
+        flex-shrink:0;
+        max-height:400px;
+        object-fit:contain;
+        background:var(--paper-warm);
+     ">
                             @endforeach
                         </div>
 
