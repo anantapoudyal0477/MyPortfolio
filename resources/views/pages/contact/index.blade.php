@@ -107,6 +107,7 @@
         fetch(contactForm.action, {
             method: 'POST',
             body: formData,
+            credentials: 'same-origin',
             headers: {
                 'X-CSRF-TOKEN': document
                     .querySelector('meta[name="csrf-token"]')
