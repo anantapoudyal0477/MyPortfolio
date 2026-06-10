@@ -27,6 +27,11 @@ class ProjectsSeeder extends Seeder
                     "/assets/Images/Food E-commerce Website/4.png",
                     "/assets/Images/Food E-commerce Website/5.png",
                 ],
+                "technologies_used" => ["ASP.NET"],    
+                "database_used" => ["MySQL"],
+                "languages_used" => "C#",
+                "hosting_platform" => "local",
+                "order" => 1,
             ],
             [
                 "title" => "Online Clothing Recommendation System",
@@ -69,6 +74,11 @@ class ProjectsSeeder extends Seeder
                     "/assets/Images/Clothing Recommendation System/35.png",
                     "/assets/Images/Clothing Recommendation System/36.png",
                 ],
+                "technologies_used" =>["Django","scikit-learn"],
+                "database_used" => ["MySQL"],
+                "hosting_platform" => "local",
+                "order" => 2,
+                "languages_used" => "Python",
             ],
             [
                 "title" => "Personal Portfolio Website 1",
@@ -79,6 +89,11 @@ class ProjectsSeeder extends Seeder
                     "/assets/Images/Personal Portfolio Website 1/3.png",
                     "/assets/Images/Personal Portfolio Website 1/4.png",
                 ],
+                "technologies_used" => ["HTML", "CSS"],
+                "database_used" => null,
+                "hosting_platform" => "github pages",
+                "order" => 3,
+                "languages_used" => "JavaScript",
             ],
             [
                 "title" => "First Laravel Project",
@@ -114,6 +129,11 @@ class ProjectsSeeder extends Seeder
                     "/assets/Images/First Laravel Project/27.png",
                     "/assets/Images/First Laravel Project/28.png",
                 ],
+                "technologies_used" => ["Laravel"],
+                "database_used" => ["MySQL"],
+                "hosting_platform" => "local",
+                "order" => 4,
+                "languages_used" => "PHP",
             ],
             [
                 "title" => "Mind Games using MAUI",
@@ -139,6 +159,11 @@ class ProjectsSeeder extends Seeder
                     "/assets/Images/Mind Games/18.jpg", 
                     "/assets/Images/Mind Games/19.jpg",
                 ],
+                "technologies_used" => ["MAUI"],
+                "database_used" => null,
+                "hosting_platform" => "local",
+                "order" => 5,
+                "languages_used" => "C#",
             ],
         ];
 
@@ -152,6 +177,11 @@ class ProjectsSeeder extends Seeder
                 'status' => 'completed',
                 'type' => 'web',
                 'category' => 'personal',
+                'technologies_used' => $project['technologies_used'],
+                'database_used' => $project['database_used'],
+                'hosting_platform' => $project['hosting_platform'],
+                'order' => $project['order'],
+                'languages_used' => $project['languages_used'],
             ]);
         }
         

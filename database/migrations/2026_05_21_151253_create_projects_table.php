@@ -25,9 +25,12 @@ return new class extends Migration
             $table->string('github_link')->nullable();
             $table->string('live_link')->nullable();
             //additional attributes
-            $table->json('technologies_used')->nullable();
-            $table->json('database_used')->nullable();
-            $table->json('hosting_platform')->nullable();
+            $table->string('technologies_used')->nullable();
+            //languages  used
+            $table->string('languages_used')->nullable();
+
+            $table->string('database_used')->nullable();
+            $table->enum('hosting_platform', ['local','aws','github pages'])->nullable();
             //order for display
             $table->integer('order')->default(0);
             $table->json('image_url')->nullable();

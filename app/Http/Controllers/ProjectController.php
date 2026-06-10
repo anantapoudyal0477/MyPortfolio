@@ -10,15 +10,17 @@ class ProjectController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
-    {
-        return view('pages.projects.index', [
-            'pageTitle' => 'Projects',
-            'projects' => Projects::paginate(3)
-        ]);
- 
-    }
+  public function index()
+{
+    $projects = Projects::orderBy('languages_used')
+        ->get()
+        ->groupBy('languages_used');
 
+    return view('pages.projects.index', [
+        'pageTitle' => 'Projects',
+        'groupedProjects' => $projects
+    ]);
+}
 
     /**
      * Show the form for creating a new resource.
