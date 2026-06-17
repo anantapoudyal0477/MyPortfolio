@@ -482,7 +482,6 @@ dialog::backdrop {
                              tabindex="0"
                              onclick="document.getElementById('project{{ $project->id }}').showModal()"
                              onkeydown="if(event.key==='Enter')document.getElementById('project{{ $project->id }}').showModal()">
-
                             <div class="project-image">
                                 @if (!empty($project->image_url[0]))
                                     <img src="{{ $project->image_url[0] }}" alt="{{ $project->title }}" loading="lazy">

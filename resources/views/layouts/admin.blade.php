@@ -12,6 +12,24 @@
 
     <style>
         body { font-family: 'Inter', sans-serif; }
+        .modal-backdrop {
+    backdrop-filter: blur(6px);
+}
+
+.modal-enter {
+    animation: pop 0.18s ease-out;
+}
+
+@keyframes pop {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
     </style>
 </head>
 

@@ -56,6 +56,12 @@ Route::prefix('/admin/')->middleware('admin')->name('admin.')->group(function ()
     });
     Route::prefix('/projects')->name('projects.')->group(function () {
         Route::get('/', [AdminProjectController::class, 'index'])->name("index");
+        //edit,update,delete routes for projects
+        //add
+        Route::post('/', [AdminProjectController::class, 'store'])->name("store");
+        Route::get('/{id}/edit', [AdminProjectController::class, 'edit'])->name("edit");
+        Route::put('/{id}', [AdminProjectController::class, 'update'])->name("update");
+        Route::delete('/{id}', [AdminProjectController::class, 'destroy'])->name("destroy");
     });
     Route::prefix('/courses')->name('courses.')->group(function () {
         Route::get('/', [AdminCourseController::class, 'index'])->name("index");
