@@ -29,12 +29,12 @@ Route::prefix('/projects')->name('projects.')->group(function () {
 });
 
 //route for courses page    
-Route::prefix('/courses')->name('courses.')->group(function(){
-    Route::get('/', [CoursesController::class, 'index'])->name("index");
-    Route::get('/{id}', [CoursesController::class, 'show'])->name("show");
+// Route::prefix('/courses')->name('courses.')->group(function(){
+//     Route::get('/', [CoursesController::class, 'index'])->name("index");
+//     Route::get('/{id}', [CoursesController::class, 'show'])->name("show");
 
-}
-);
+// }
+// );
 
 
 

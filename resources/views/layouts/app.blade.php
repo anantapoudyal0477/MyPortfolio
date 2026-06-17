@@ -230,7 +230,7 @@
         <a href="{{ route('index') }}" class="ajax-link @if(Route::is('index')) active @endif">Home</a>
         <a href="{{ route('projects.index') }}" class="ajax-link @if(Route::is('projects.*')) active @endif">Projects</a>
         <a href="{{ route('contact.index') }}" class="ajax-link @if(Route::is('contact.*')) active @endif">Contact</a>
-        <a href="{{ route('courses.index') }}" class="ajax-link @if(Route::is('courses.*')) active @endif">Courses</a>
+        {{-- <a href="{{ route('courses.index') }}" class="ajax-link @if(Route::is('courses.*')) active @endif">Courses</a> --}}
     </div>
 
 </nav>
@@ -247,7 +247,7 @@
             <a href="{{ route('index') }}">Home</a>
             <a href="{{ route('projects.index') }}">Projects</a>
             <a href="{{ route('contact.index') }}">Contact</a>
-            <a href="{{ route('courses.index') }}">Courses</a>
+            {{-- <a href="{{ route('courses.index') }}">Courses</a> --}}
         </div>
 
         <div></div>
