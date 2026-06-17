@@ -35,6 +35,9 @@ class ProjectController extends Controller
             'type' => 'required|in:web,mobile,desktop,other',
             'category' => 'required|in:personal,academic,professional',
             'images.*' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
+            'live_link' => 'nullable|url',
+            'github_link' => 'nullable|url',
+            'languages_used' => 'nullable|string',
         ]);
 
         // ================= SLUG =================
@@ -129,6 +132,9 @@ class ProjectController extends Controller
             'type' => 'required|in:web,mobile,desktop,other',
             'category' => 'required|in:personal,academic,professional',
             'images.*' => 'nullable|image|max:2048',
+            'live_link' => 'nullable|url',
+            'github_link' => 'nullable|url',
+            'languages_used' => 'nullable|string',
         ]);
 
         // ================= FOLDER =================
