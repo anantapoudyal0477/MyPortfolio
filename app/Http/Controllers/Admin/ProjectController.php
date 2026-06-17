@@ -77,24 +77,7 @@ class ProjectController extends Controller
             }
         }
 
-        //show everything before save
-        // dd([
-        //     'title' => $request->title,
-        //     'slug' => $slug,
-        //     'short_description' => $request->short_description ?? '',
-        //     'description' => $request->description,
-        //     'status' => $request->status,
-        //     'type' => $request->type,
-        //     'category' => $request->category,
-        //     'github_link' => $request->github_link,
-        //     'live_link' => $request->live_link,
-        //     'technologies_used' => $this->toArray($request->technologies_used),
-        //     'database_used' => $this->toArray($request->database_used),
-        //     'languages_used' => $request->languages_used,
-        //     'hosting_platform' => $request->hosting_platform,
-        //     'order' => $request->order ?? 0,
-        //     'image_url' => $imagePaths,
-        // ]);
+   
 
         // ================= SAVE =================
         Projects::create([
@@ -210,8 +193,7 @@ class ProjectController extends Controller
                 $index++;
             }
         }
-        //dd all attributes before update
-        // dd($request->all());
+
 
         // ================= UPDATE =================
         $project->update([
