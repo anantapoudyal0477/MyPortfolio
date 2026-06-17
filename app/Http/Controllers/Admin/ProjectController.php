@@ -45,7 +45,6 @@ class ProjectController extends Controller
 
         $original = $slug;
         $counter = 1;
-
         while (Projects::where('slug', $slug)->exists()) {
             $slug = $original . '-' . $counter++;
         }
