@@ -102,8 +102,7 @@
                         class="w-full p-3 border rounded-xl">
 
                     <div class="grid grid-cols-2 gap-3">
-
-                        <input name="languages_used" placeholder="Languages"
+                        <input type="text" name="languages_used" placeholder="Languages"
                             class="p-3 border rounded-xl">
 
                         <input name="database_used" placeholder="Database"
@@ -266,6 +265,7 @@
        value="{{ is_array($project->technologies_used) ? implode(', ', $project->technologies_used) : $project->technologies_used }}"
        class="w-full p-3 border rounded-xl">
                     <div class="grid grid-cols-2 gap-3">
+asd{{ $project->languages_used }}
 
                         <input name="languages_used"
                                value="{{ $project->languages_used }}"

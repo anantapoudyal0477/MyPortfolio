@@ -23,6 +23,7 @@ class Projects extends Model
         'technologies_used',
         'database_used',
         'hosting_platform',
+        'languages_used',
         'order',
         'image_url'
     ];
