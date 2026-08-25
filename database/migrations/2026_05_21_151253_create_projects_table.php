@@ -30,7 +30,7 @@ return new class extends Migration
            $table->string('languages_used')->nullable();
            
            $table->json('database_used')->nullable();
-            $table->enum('hosting_platform', ['local','aws','github pages'])->nullable();
+            $table->enum('hosting_platform', ['local','aws','github pages','Production'])->nullable();
             //order for display
             $table->integer('order')->default(0);
             $table->json('image_url')->nullable();

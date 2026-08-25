@@ -12,12 +12,20 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('experiences', function (Blueprint $table) {
+
             $table->id();
+
             $table->string('company_name');
-            $table->enum('position',['internship','full-time','part-time','freelance']);
+
+            // Actual job title
+            $table->string('position');
+
             $table->date('start_date');
+
             $table->date('end_date')->nullable();
+
             $table->text('description')->nullable();
+
             $table->timestamps();
         });
     }
