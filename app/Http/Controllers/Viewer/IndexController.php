@@ -36,7 +36,7 @@ class IndexController extends Controller
 
     private function getJson(string $file): array
     {
-        $path = storage_path("app/public/data/{$file}");
+        $path = resource_path("data/{$file}");
 
         return json_decode(
             file_get_contents($path),
