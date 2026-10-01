@@ -2,30 +2,61 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Ananta Poudyal | Laravel Developer</title>
 
-    <meta name="description" content="Portfolio of Ananta Poudyal, Laravel Developer and MCA student from Kathmandu, Nepal.">
+    <meta name="description"
+        content="Portfolio of Ananta Poudyal, Laravel Developer and MCA student from Kathmandu, Nepal.">
+
+    <meta name="author" content="Ananta Poudyal">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="{{ asset('assets/viewer/img/favicon-32x32.png') }}">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="{{ asset('assets/viewer/img/apple-touch-icon.png') }}">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ananta Poudyal | Laravel Developer">
+    <meta property="og:description"
+        content="Portfolio of Ananta Poudyal, Laravel Developer and MCA student from Kathmandu, Nepal.">
+    <meta property="og:image"
+        content="{{ asset('assets/viewer/img/og-image.jpg') }}">
+    <meta property="og:url" content="{{ url('/') }}">
+    <meta property="og:site_name" content="Ananta Poudyal Portfolio">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ananta Poudyal | Laravel Developer">
+    <meta name="twitter:description"
+        content="Portfolio of Ananta Poudyal, Laravel Developer and MCA student from Kathmandu, Nepal.">
+    <meta name="twitter:image"
+        content="{{ asset('assets/viewer/img/og-image.jpg') }}">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- Swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="{{ asset('assets/viewer/css/style.css') }}">
-
+    <link rel="stylesheet"
+        href="{{ asset('assets/viewer/css/style.css') }}">
 </head>
 
 
