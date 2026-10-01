@@ -1004,7 +1004,7 @@
         <!-- =========================
      Contact
 ========================= -->
-
+<div></div>
         <section class="section" id="contact">
             <div class="container">
                 <h2 class="section-title">
