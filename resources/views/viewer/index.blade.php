@@ -34,10 +34,10 @@
         content="{{ $ogDescription ?? $metaDescription ?? 'Portfolio of Ananta Poudyal, Laravel Developer and MCA student from Kathmandu, Nepal.' }}">
 
     <meta property="og:image"
-        content="{{ $ogImage ?? asset('assets/viewer/img/og-image.jpg') }}">
+        content="{{ $ogImage ?? asset('assets/viewer/img/favicon-32x32.png') }}">
 
     <meta property="og:url"
-        content="{{ $ogUrl ?? route('home') }}">
+        content="{{  route('home') }}">
 
     <meta property="og:site_name"
         content="{{ $ogSiteName ?? 'Ananta Poudyal Portfolio' }}">
