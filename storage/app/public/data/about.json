@@ -1,0 +1,16 @@
+[{
+        "icon": "fas fa-user",
+        "title": "Who I Am",
+        "description": "I'm a Laravel Developer and MCA student with hands-on experience developing dynamic websites, CMS platforms and database-driven applications."
+    },
+    {
+        "icon": "fas fa-server",
+        "title": "What I Do",
+        "description": "I work primarily with Laravel, PHP and MySQL, developing backend functionality, CRUD systems, authentication, CMS features and reusable Laravel components."
+    },
+    {
+        "icon": "fas fa-graduation-cap",
+        "title": "Education",
+        "description": "Currently pursuing a Master of Computer Application at Patan Multiple Campus after completing my BCA with a cumulative GPA of 3.40 / 4.00."
+    }
+]

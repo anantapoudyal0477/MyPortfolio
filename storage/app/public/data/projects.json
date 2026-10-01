@@ -1,0 +1,55 @@
+[{
+        "badge": "Agriculture Website",
+        "title": "Jibandeep Bahuuddeshiya",
+        "description": "Converted the provided agriculture frontend design into reusable Laravel Blade templates and a functional database-driven website. Developed dynamic products, services, farm showcases, testimonials, posts and company information.",
+        "technologies": [
+            "Laravel",
+            "PHP",
+            "MySQL",
+            "JavaScript"
+        ]
+    },
+    {
+        "badge": "Dental Clinic",
+        "title": "DK7 Dental",
+        "description": "A dynamic dental clinic website with services, company information, testimonials, projects, appointments, contact management and administrative functionality.",
+        "technologies": [
+            "Laravel",
+            "PHP",
+            "MySQL"
+        ]
+    },
+    {
+        "badge": "Live Website",
+        "title": "USAN Nepal",
+        "description": "A production Laravel website featuring governance, sports and technology, committees, media center, services, programs, news and events.",
+        "technologies": [
+            "Laravel",
+            "PHP",
+            "MySQL",
+            "JavaScript"
+        ]
+    },
+    {
+        "badge": "Live Website",
+        "title": "Universal Hygiene",
+        "description": "A dynamic company website featuring products, commodities, brands, blogs, testimonials, company information and CMS functionality.",
+        "technologies": [
+            "Laravel",
+            "PHP",
+            "MySQL",
+            "JavaScript"
+        ]
+    },
+    {
+        "badge": "Blog Platform",
+        "title": "Laravel Blog Website",
+        "description": "A Laravel-based blog platform with dynamic posts, categories, tags, testimonials, galleries, education and company information.",
+        "technologies": [
+            "Laravel",
+            "PHP",
+            "MySQL",
+            "JavaScript"
+        ]
+    }
+]

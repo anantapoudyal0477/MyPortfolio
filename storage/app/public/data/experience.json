@@ -1,0 +1,27 @@
+[{
+        "date": "June 2026 – September 2026",
+        "position": "Laravel Developer Intern",
+        "company": "D. Kedar Tech7 Pvt. Ltd.",
+        "location": "Imadol, Lalitpur",
+        "responsibilities": [
+            "Developed and maintained dynamic websites using Laravel, PHP, MySQL, Blade, JavaScript and jQuery.",
+            "Implemented CRUD operations, migrations, seeders, Eloquent relationships, validation and authentication.",
+            "Developed reusable admin-panel components and AJAX-based functionality.",
+            "Built dynamic banners, galleries, testimonials, products, blogs, company information and contact sections.",
+            "Worked with Summernote, HTML sanitization, debugging, Git and database management.",
+            "Contributed to multiple client projects including live production websites."
+        ]
+    },
+    {
+        "date": "November 2024 – February 2025",
+        "position": "Web Development Intern",
+        "company": "Civil Aviation Authority of Nepal (CAAN)",
+        "location": "Sinamangal",
+        "responsibilities": [
+            "Worked with Laravel, PHP, MySQL, HTML, CSS and JavaScript in a real-world development environment.",
+            "Developed components for an airport informational website using Laravel MVC architecture.",
+            "Assisted in developing a CMS for managing airport information.",
+            "Gained practical knowledge of web hosting and deployment."
+        ]
+    }
+]

@@ -1,0 +1,32 @@
+{
+    "badge": {
+        "icon": "fas fa-code",
+        "text": "Laravel Developer"
+    },
+    "greeting": "Hi, I'm",
+    "name": "Ananta Poudyal",
+    "subtitle": "Laravel Developer & MCA Student",
+    "description": "I build dynamic and database-driven web applications using Laravel, PHP, MySQL, JavaScript, Blade and jQuery. I enjoy turning frontend designs into functional, maintainable Laravel applications.",
+    "buttons": [{
+            "text": "View My Projects",
+            "url": "#projects",
+            "icon": "fas fa-code",
+            "class": "btn-primary"
+        },
+        {
+            "text": "Contact Me",
+            "url": "#contact",
+            "icon": "fas fa-envelope",
+            "class": "btn-outline"
+        }
+    ],
+    "contact": [{
+            "icon": "fas fa-location-dot",
+            "text": "Kathmandu, Nepal"
+        },
+        {
+            "icon": "fas fa-envelope",
+            "text": "anantapoudyal0477@gmail.com"
+        }
+    ]
+}

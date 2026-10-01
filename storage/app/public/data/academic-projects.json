@@ -1,0 +1,39 @@
+[{
+        "badge": "Mobile Application",
+        "title": "Mind Games",
+        "description": "A mobile application containing three algorithm-based games: Tic-Tac-Toe, 8 Puzzle, and N-Queen. The project focused on implementing different artificial intelligence and algorithmic problem-solving techniques.",
+        "technologies": [
+            ".NET MAUI",
+            "C#",
+            "Algorithms",
+            "AI"
+        ],
+        "extra_label": "Algorithms",
+        "extra": "Alpha-Beta Pruning, A* Search, Manhattan Distance, Brute Force, and Backtracking."
+    },
+    {
+        "badge": "Web Application",
+        "title": "Online Food Ordering System",
+        "description": "A web-based food ordering system with user authentication, food ordering, order processing, and order history functionality.",
+        "technologies": [
+            "ASP.NET",
+            "MySQL",
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ]
+    },
+    {
+        "badge": "Recommendation System",
+        "title": "Online Clothing Recommendation System",
+        "description": "A content-based clothing recommendation system that recommends products based on their similarity. The system uses cosine similarity to compare product characteristics.",
+        "technologies": [
+            "Django",
+            "Python",
+            "MySQL",
+            "Machine Learning"
+        ],
+        "extra_label": "Approach",
+        "extra": "Content-based filtering using cosine similarity with a Kaggle dataset."
+    }
+]

@@ -1,0 +1,37 @@
+[{
+        "date": "2026 – Present",
+        "degree": "Master of Computer Application (MCA)",
+        "institution": "Patan Multiple Campus",
+        "location": "Patan Dhoka, Lalitpur",
+        "details": [
+            "Expected graduation: 2028"
+        ]
+    },
+    {
+        "date": "2021 – 2026",
+        "degree": "Bachelor of Computer Application (BCA)",
+        "institution": "Patan Multiple Campus",
+        "location": "Patan Dhoka, Lalitpur",
+        "details": [
+            "Cumulative GPA: 3.40 / 4.00"
+        ]
+    },
+    {
+        "date": "2018 – 2020",
+        "degree": "+2 Management",
+        "institution": "Capital Secondary School",
+        "location": "Koteshwor, Kathmandu",
+        "details": [
+            "Cumulative GPA: 3.10 / 4.00"
+        ]
+    },
+    {
+        "date": "2018",
+        "degree": "SEE",
+        "institution": "Kanjirowa National School",
+        "location": "Koteshwor, Kathmandu",
+        "details": [
+            "Cumulative GPA: 3.05 / 4.00"
+        ]
+    }
+]

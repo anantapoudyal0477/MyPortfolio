@@ -1,0 +1,60 @@
+[{
+        "icon": "fas fa-code",
+        "title": "Languages",
+        "skills": [
+            "C",
+            "C#",
+            "Java",
+            "PHP"
+        ]
+    },
+    {
+        "icon": "fas fa-globe",
+        "title": "Web Development",
+        "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "jQuery",
+            "AJAX",
+            "Blade",
+            "ASP.NET"
+        ]
+    },
+    {
+        "icon": "fab fa-android",
+        "title": "Mobile Development",
+        "skills": [
+            "Android Studio (Basic)",
+            "Java"
+        ]
+    },
+    {
+        "icon": "fas fa-layer-group",
+        "title": "Laravel",
+        "skills": [
+            "MVC",
+            "Routing",
+            "Controllers",
+            "Middleware",
+            "Eloquent ORM",
+            "CRUD",
+            "Auth",
+            "Migrations",
+            "Seeders",
+            "Relationships"
+        ]
+    },
+    {
+        "icon": "fas fa-database",
+        "title": "Database & Tools",
+        "skills": [
+            "MySQL",
+            "Git",
+            "DBeaver",
+            "Laravel Debugbar",
+            "Composer",
+            "npm"
+        ]
+    }
+]

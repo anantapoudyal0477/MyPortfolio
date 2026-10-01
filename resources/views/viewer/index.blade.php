@@ -14,45 +14,37 @@
     <meta name="author" content="{{ $metaAuthor ?? 'Ananta Poudyal' }}">
 
     {{-- Favicon --}}
-    <link rel="icon"
-        type="image/png"
-        sizes="32x32"
+    <link rel="icon" type="image/png" sizes="32x32"
         href="{{ $favicon ?? asset('assets/viewer/img/favicon-32x32.png') }}">
 
     {{-- Apple Touch Icon --}}
-    <link rel="apple-touch-icon"
-        sizes="180x180"
+    <link rel="apple-touch-icon" sizes="180x180"
         href="{{ $appleTouchIcon ?? asset('assets/viewer/img/apple-touch-icon.png') }}">
 
     {{-- Open Graph --}}
     <meta property="og:type" content="{{ $ogType ?? 'website' }}">
 
-    <meta property="og:title"
-        content="{{ $ogTitle ?? $metaTitle ?? 'Ananta Poudyal | Laravel Developer' }}">
+    <meta property="og:title" content="{{ $ogTitle ?? ($metaTitle ?? 'Ananta Poudyal | Laravel Developer') }}">
 
     <meta property="og:description"
-        content="{{ $ogDescription ?? $metaDescription ?? 'Portfolio of Ananta Poudyal, Laravel Developer and MCA student from Kathmandu, Nepal.' }}">
+        content="{{ $ogDescription ?? ($metaDescription ?? 'Portfolio of Ananta Poudyal, Laravel Developer and MCA student from Kathmandu, Nepal.') }}">
 
-    <meta property="og:image"
-        content="{{ $ogImage ?? asset('assets/viewer/img/favicon-32x32.png') }}">
+    <meta property="og:image" content="{{ $ogImage ?? asset('assets/viewer/img/favicon-32x32.png') }}">
 
-    <meta property="og:url"
-        content="{{  route('home') }}">
+    <meta property="og:url" content="{{ route('home') }}">
 
-    <meta property="og:site_name"
-        content="{{ $ogSiteName ?? 'Ananta Poudyal Portfolio' }}">
+    <meta property="og:site_name" content="{{ $ogSiteName ?? 'Ananta Poudyal Portfolio' }}">
 
     {{-- Twitter / X --}}
     <meta name="twitter:card" content="summary_large_image">
 
     <meta name="twitter:title"
-        content="{{ $twitterTitle ?? $ogTitle ?? $metaTitle ?? 'Ananta Poudyal | Laravel Developer' }}">
+        content="{{ $twitterTitle ?? ($ogTitle ?? ($metaTitle ?? 'Ananta Poudyal | Laravel Developer')) }}">
 
     <meta name="twitter:description"
-        content="{{ $twitterDescription ?? $ogDescription ?? $metaDescription ?? 'Portfolio of Ananta Poudyal, Laravel Developer and MCA student from Kathmandu, Nepal.' }}">
+        content="{{ $twitterDescription ?? ($ogDescription ?? ($metaDescription ?? 'Portfolio of Ananta Poudyal, Laravel Developer and MCA student from Kathmandu, Nepal.')) }}">
 
-    <meta name="twitter:image"
-        content="{{ $twitterImage ?? $ogImage ?? asset('assets/viewer/img/og-image.jpg') }}">
+    <meta name="twitter:image" content="{{ $twitterImage ?? ($ogImage ?? asset('assets/viewer/img/og-image.jpg')) }}">
 
     {{-- Google Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,16 +55,13 @@
         rel="stylesheet">
 
     {{-- Font Awesome --}}
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     {{-- Swiper --}}
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     {{-- Main CSS --}}
-    <link rel="stylesheet"
-        href="{{ asset('assets/viewer/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/viewer/css/style.css') }}">
 </head>
 
 
@@ -87,8 +76,8 @@
         <div class="container nav-container">
 
             <a href="#home" class="logo">
-            &lt;Ananta<span>/&gt;</span>
-        </a>
+                &lt;Ananta<span>/&gt;</span>
+            </a>
 
 
             <div class="nav-menu" id="nav-menu">
@@ -97,43 +86,43 @@
 
                     <li>
                         <a href="#home" class="nav-link active">
-                        Home
-                    </a>
+                            Home
+                        </a>
                     </li>
 
                     <li>
                         <a href="#about" class="nav-link">
-                        About
-                    </a>
+                            About
+                        </a>
                     </li>
 
                     <li>
                         <a href="#skills" class="nav-link">
-                        Skills
-                    </a>
+                            Skills
+                        </a>
                     </li>
 
                     <li>
                         <a href="#experience" class="nav-link">
-                        Experience
-                    </a>
+                            Experience
+                        </a>
                     </li>
 
                     <li>
                         <a href="#projects" class="nav-link">
-                        Projects
-                    </a>
+                            Projects
+                        </a>
                     </li>
                     <li>
                         <a href="#academic-projects" class="nav-link">
-            Academic
-        </a>
+                            Academic
+                        </a>
                     </li>
 
                     <li>
                         <a href="#contact" class="nav-link">
-                        Contact
-                    </a>
+                            Contact
+                        </a>
                     </li>
 
                 </ul>
@@ -143,18 +132,19 @@
 
             <div class="navbar-actions">
 
-                <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+                <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode"
+                    title="Switch to light mode">
 
-                <i class="fas fa-sun" id="theme-icon"></i>
+                    <i class="fas fa-sun" id="theme-icon"></i>
 
-            </button>
+                </button>
 
 
                 <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open navigation">
 
-                <i class="fas fa-bars"></i>
+                    <i class="fas fa-bars"></i>
 
-            </button>
+                </button>
 
             </div>
 
@@ -169,146 +159,81 @@
         <!-- =========================
      Hero
 ========================= -->
+<section class="hero" id="home">
+    <div class="container">
 
-        <section class="hero" id="home">
-
-            <div class="container">
-
-                <span class="badge">
-            <i class="fas fa-code"></i>
-            Laravel Developer
+        <span class="badge">
+            <i class="{{ $hero['badge']['icon'] }}"></i>
+            {{ $hero['badge']['text'] }}
         </span>
 
+        <h1>
+            {{ $hero['greeting'] }}
+            <span class="highlight">{{ $hero['name'] }}</span>
+        </h1>
 
-                <h1>
-                    Hi, I'm
-                    <span class="highlight">Ananta Poudyal</span>
-                </h1>
+        <h2>
+            {{ $hero['subtitle'] }}
+        </h2>
 
+        <p>
+            {{ $hero['description'] }}
+        </p>
 
-                <h2>
-                    Laravel Developer & MCA Student
-                </h2>
+        <div class="hero-buttons">
+            @foreach ($hero['buttons'] as $button)
+                <a href="{{ $button['url'] }}" class="btn {{ $button['class'] }}">
+                    <i class="{{ $button['icon'] }}"></i>
+                    {{ $button['text'] }}
+                </a>
+            @endforeach
+        </div>
 
+        <div class="hero-contact-info">
+            @foreach ($hero['contact'] as $item)
+                <span>
+                    <i class="{{ $item['icon'] }}"></i>
+                    {{ $item['text'] }}
+                </span>
+            @endforeach
+        </div>
 
-                <p>
-                    I build dynamic and database-driven web applications using Laravel, PHP, MySQL, JavaScript, Blade and jQuery. I enjoy turning frontend designs into functional, maintainable Laravel applications.
-                </p>
-
-
-                <div class="hero-buttons">
-
-                    <a href="#projects" class="btn btn-primary">
-
-                        <i class="fas fa-code"></i> View My Projects
-
-                    </a>
-
-
-                    <a href="#contact" class="btn btn-outline">
-
-                        <i class="fas fa-envelope"></i> Contact Me
-
-                    </a>
-
-                </div>
-
-
-                <div class="hero-contact-info">
-
-                    <span>
-                <i class="fas fa-location-dot"></i>
-                Kathmandu, Nepal
-            </span>
-
-
-
-                    <span>
-                <i class="fas fa-envelope"></i>
-                anantapoudyal0477@gmail.com
-            </span>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
+    </div>
+</section>
         <!-- =========================
      About
 ========================= -->
+<section class="section" id="about">
+    <div class="container">
 
-        <section class="section" id="about">
+        <h2 class="section-title">
+            About Me
+        </h2>
 
-            <div class="container">
+        <div class="about-grid">
 
-                <h2 class="section-title">
-                    About Me
-                </h2>
+            @foreach ($about as $item)
+                <div class="about-card">
 
-
-                <div class="about-grid">
-
-
-                    <div class="about-card">
-
-                        <div class="card-icon">
-                            <i class="fas fa-user"></i>
-                        </div>
-
-                        <h3>
-                            Who I Am
-                        </h3>
-
-                        <p>
-                            I'm a Laravel Developer and MCA student with hands-on experience developing dynamic websites, CMS platforms and database-driven applications.
-                        </p>
-
+                    <div class="card-icon">
+                        <i class="{{ $item['icon'] }}"></i>
                     </div>
 
+                    <h3>
+                        {{ $item['title'] }}
+                    </h3>
 
-                    <div class="about-card">
-
-                        <div class="card-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-
-                        <h3>
-                            What I Do
-                        </h3>
-
-                        <p>
-                            I work primarily with Laravel, PHP and MySQL, developing backend functionality, CRUD systems, authentication, CMS features and reusable Laravel components.
-                        </p>
-
-                    </div>
-
-
-                    <div class="about-card">
-
-                        <div class="card-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-
-                        <h3>
-                            Education
-                        </h3>
-
-                        <p>
-                            Currently pursuing a Master of Computer Application at Patan Multiple Campus after completing my BCA with a cumulative GPA of 3.40 / 4.00.
-                        </p>
-
-                    </div>
-
+                    <p>
+                        {{ $item['description'] }}
+                    </p>
 
                 </div>
+            @endforeach
 
-            </div>
+        </div>
 
-        </section>
-
-
+    </div>
+</section>
         <!-- =========================
      Skills
 ========================= -->
@@ -324,118 +249,27 @@
 
                 <div class="skills-grid">
 
+                    @foreach ($skills as $skill)
+                        <div class="skill-category">
 
-                    <div class="skill-category">
+                            <div class="card-icon">
+                                <i class="{{ $skill['icon'] }}"></i>
+                            </div>
 
-                        <div class="card-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
+                            <h3>
+                                {{ $skill['title'] }}
+                            </h3>
 
-                        <h3>
-                            Languages
-                        </h3>
-
-                        <div class="skill-tags">
-
-                            <span>C</span>
-                            <span>C#</span>
-                            <span>Java</span>
-                            <span>PHP</span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="skill-category">
-
-                        <div class="card-icon">
-                            <i class="fas fa-globe"></i>
-                        </div>
-
-                        <h3>
-                            Web Development
-                        </h3>
-
-                        <div class="skill-tags">
-
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                            <span>jQuery</span>
-                            <span>AJAX</span>
-                            <span>Blade</span>
-                            <span>ASP.NET</span>
+                            <div class="skill-tags">
+                                @foreach ($skill['skills'] as $item)
+                                    <span>{{ $item }}</span>
+                                @endforeach
+                            </div>
 
                         </div>
-
-                    </div>
-
-                    <div class="skill-category">
-                        <div class="card-icon">
-
-                            <i class="fab fa-android"></i>
-                        </div>
-                        <h3>Mobile Development</h3>
-                        <div class="skill-tags">
-                            <span>Android Studio  (Basic)</span>
-                            <span>Java</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-
-                        <div class="card-icon">
-                            <i class="fas fa-layer-group"></i>
-                        </div>
-
-                        <h3>
-                            Laravel
-                        </h3>
-
-                        <div class="skill-tags">
-
-                            <span>MVC</span>
-                            <span>Routing</span>
-                            <span>Controllers</span>
-                            <span>Middleware</span>
-                            <span>Eloquent ORM</span>
-                            <span>CRUD</span>
-                            <span>Auth</span>
-                            <span>Migrations</span>
-                            <span>Seeders</span>
-                            <span>Relationships</span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="skill-category">
-
-                        <div class="card-icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-
-                        <h3>
-                            Database & Tools
-                        </h3>
-
-                        <div class="skill-tags">
-
-                            <span>MySQL</span>
-                            <span>Git</span>
-                            <span>DBeaver</span>
-                            <span>Laravel Debugbar</span>
-                            <span>Composer</span>
-                            <span>npm</span>
-
-                        </div>
-
-                    </div>
-
+                    @endforeach
 
                 </div>
-
             </div>
 
         </section>
@@ -456,101 +290,35 @@
 
                 <div class="timeline">
 
+                    @foreach ($experience as $item)
+                        <div class="timeline-item">
 
-                    <!-- D Kedar -->
+                            <div class="timeline-dot"></div>
 
-                    <div class="timeline-item">
+                            <div class="timeline-date">
+                                {{ $item['date'] }}
+                            </div>
 
-                        <div class="timeline-dot"></div>
+                            <h3>
+                                {{ $item['position'] }}
+                            </h3>
 
-                        <div class="timeline-date">
-                            June 2026 – September 2026
+                            <h4>
+                                {{ $item['company'] }} · {{ $item['location'] }}
+                            </h4>
+
+                            <ul>
+                                @foreach ($item['responsibilities'] as $responsibility)
+                                    <li>
+                                        {{ $responsibility }}
+                                    </li>
+                                @endforeach
+                            </ul>
+
                         </div>
-
-                        <h3>
-                            Laravel Developer Intern
-                        </h3>
-
-                        <h4>
-                            D. Kedar Tech7 Pvt. Ltd. · Imadol, Lalitpur
-                        </h4>
-
-
-                        <ul>
-
-                            <li>
-                                Developed and maintained dynamic websites using Laravel, PHP, MySQL, Blade, JavaScript and jQuery.
-                            </li>
-
-                            <li>
-                                Implemented CRUD operations, migrations, seeders, Eloquent relationships, validation and authentication.
-                            </li>
-
-                            <li>
-                                Developed reusable admin-panel components and AJAX-based functionality.
-                            </li>
-
-                            <li>
-                                Built dynamic banners, galleries, testimonials, products, blogs, company information and contact sections.
-                            </li>
-
-                            <li>
-                                Worked with Summernote, HTML sanitization, debugging, Git and database management.
-                            </li>
-
-                            <li>
-                                Contributed to multiple client projects including live production websites.
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-
-                    <!-- CAAN -->
-
-                    <div class="timeline-item">
-
-                        <div class="timeline-dot"></div>
-
-                        <div class="timeline-date">
-                            November 2024 – February 2025
-                        </div>
-
-                        <h3>
-                            Web Development Intern
-                        </h3>
-
-                        <h4>
-                            Civil Aviation Authority of Nepal (CAAN) · Sinamangal
-                        </h4>
-
-
-                        <ul>
-
-                            <li>
-                                Worked with Laravel, PHP, MySQL, HTML, CSS and JavaScript in a real-world development environment.
-                            </li>
-
-                            <li>
-                                Developed components for an airport informational website using Laravel MVC architecture.
-                            </li>
-
-                            <li>
-                                Assisted in developing a CMS for managing airport information.
-                            </li>
-
-                            <li>
-                                Gained practical knowledge of web hosting and deployment.
-                            </li>
-
-                        </ul>
-
-                    </div>
-
+                    @endforeach
 
                 </div>
-
             </div>
 
         </section>
@@ -573,164 +341,31 @@
 
                     <div class="swiper-wrapper">
 
+                        @foreach ($projects as $project)
+                            <div class="swiper-slide">
+                                <div class="project-card">
 
-                        <!-- Jibandeep -->
+                                    <span class="project-badge">
+                                        {{ $project['badge'] }}
+                                    </span>
 
-                        <div class="swiper-slide">
+                                    <h3>
+                                        {{ $project['title'] }}
+                                    </h3>
 
-                            <div class="project-card">
+                                    <p class="project-desc">
+                                        {{ $project['description'] }}
+                                    </p>
 
-                                <span class="project-badge">
-                            Agriculture Website
-                        </span>
+                                    <div class="project-tech">
+                                        @foreach ($project['technologies'] as $technology)
+                                            <span>{{ $technology }}</span>
+                                        @endforeach
+                                    </div>
 
-                                <h3>
-                                    Jibandeep Bahuuddeshiya
-                                </h3>
-
-                                <p class="project-desc">
-                                    Converted the provided agriculture frontend design into reusable Laravel Blade templates and a functional database-driven website. Developed dynamic products, services, farm showcases, testimonials, posts and company information.
-                                </p>
-
-                                <div class="project-tech">
-                                    <span>Laravel</span>
-                                    <span>PHP</span>
-                                    <span>MySQL</span>
-                                    <span>JavaScript</span>
                                 </div>
-
-
-
                             </div>
-
-                        </div>
-
-
-                        <!-- DK7 Dental -->
-
-                        <div class="swiper-slide">
-
-                            <div class="project-card">
-
-                                <span class="project-badge">
-                            Dental Clinic
-                        </span>
-
-                                <h3>
-                                    DK7 Dental
-                                </h3>
-
-                                <p class="project-desc">
-                                    A dynamic dental clinic website with services, company information, testimonials, projects, appointments, contact management and administrative functionality.
-                                </p>
-
-                                <div class="project-tech">
-                                    <span>Laravel</span>
-                                    <span>PHP</span>
-                                    <span>MySQL</span>
-                                </div>
-
-
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- USAN -->
-
-                        <div class="swiper-slide">
-
-                            <div class="project-card">
-
-                                <span class="project-badge">
-                            Live Website
-                        </span>
-
-                                <h3>
-                                    USAN Nepal
-                                </h3>
-
-                                <p class="project-desc">
-                                    A production Laravel website featuring governance, sports and technology, committees, media center, services, programs, news and events.
-                                </p>
-
-                                <div class="project-tech">
-                                    <span>Laravel</span>
-                                    <span>PHP</span>
-                                    <span>MySQL</span>
-                                    <span>JavaScript</span>
-                                </div>
-
-
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- Universal Hygiene -->
-
-                        <div class="swiper-slide">
-
-                            <div class="project-card">
-
-                                <span class="project-badge">
-                            Live Website
-                        </span>
-
-                                <h3>
-                                    Universal Hygiene
-                                </h3>
-
-                                <p class="project-desc">
-                                    A dynamic company website featuring products, commodities, brands, blogs, testimonials, company information and CMS functionality.
-                                </p>
-
-                                <div class="project-tech">
-                                    <span>Laravel</span>
-                                    <span>PHP</span>
-                                    <span>MySQL</span>
-                                    <span>JavaScript</span>
-                                </div>
-
-
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- DK Blog -->
-
-                        <div class="swiper-slide">
-
-                            <div class="project-card">
-
-                                <span class="project-badge">
-                            Blog Platform
-                        </span>
-
-                                <h3>
-                                    Laravel Blog Website
-                                </h3>
-
-                                <p class="project-desc">
-                                    A Laravel-based blog platform with dynamic posts, categories, tags, testimonials, galleries, education and company information.
-                                </p>
-
-                                <div class="project-tech">
-                                    <span>Laravel</span>
-                                    <span>PHP</span>
-                                    <span>MySQL</span>
-                                    <span>JavaScript</span>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-
+                        @endforeach
 
                     </div>
 
@@ -764,108 +399,40 @@
 
                     <div class="swiper-wrapper">
 
+                        @foreach ($academicProjects as $project)
+                            <div class="swiper-slide">
+                                <div class="project-card">
 
-                        <!-- Mind Games -->
+                                    <span class="project-badge">
+                                        {{ $project['badge'] }}
+                                    </span>
 
-                        <div class="swiper-slide">
+                                    <h3>
+                                        {{ $project['title'] }}
+                                    </h3>
 
-                            <div class="project-card">
+                                    <p class="project-desc">
+                                        {{ $project['description'] }}
+                                    </p>
 
-                                <span class="project-badge">
-                            Mobile Application
-                        </span>
+                                    <div class="project-tech">
+                                        @foreach ($project['technologies'] as $technology)
+                                            <span>{{ $technology }}</span>
+                                        @endforeach
+                                    </div>
 
-                                <h3>
-                                    Mind Games
-                                </h3>
+                                    @if (!empty($project['extra']))
+                                        <div class="project-desc">
+                                            <strong>{{ $project['extra_label'] }}:</strong>
+                                            {{ $project['extra'] }}
+                                        </div>
+                                    @endif
 
-                                <p class="project-desc">
-                                    A mobile application containing three algorithm-based games: Tic-Tac-Toe, 8 Puzzle, and N-Queen. The project focused on implementing different artificial intelligence and algorithmic problem-solving techniques.
-                                </p>
-
-                                <div class="project-tech">
-                                    <span>.NET MAUI</span>
-                                    <span>C#</span>
-                                    <span>Algorithms</span>
-                                    <span>AI</span>
                                 </div>
-
-                                <div class="project-desc">
-                                    <strong>Algorithms:</strong> Alpha-Beta Pruning, A* Search, Manhattan Distance, Brute Force, and Backtracking.
-                                </div>
-
                             </div>
-
-                        </div>
-
-
-                        <!-- Online Food Ordering -->
-
-                        <div class="swiper-slide">
-
-                            <div class="project-card">
-
-                                <span class="project-badge">
-                            Web Application
-                        </span>
-
-                                <h3>
-                                    Online Food Ordering System
-                                </h3>
-
-                                <p class="project-desc">
-                                    A web-based food ordering system with user authentication, food ordering, order processing, and order history functionality.
-                                </p>
-
-                                <div class="project-tech">
-                                    <span>ASP.NET</span>
-                                    <span>MySQL</span>
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JavaScript</span>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- Clothing Recommendation -->
-
-                        <div class="swiper-slide">
-
-                            <div class="project-card">
-
-                                <span class="project-badge">
-                            Recommendation System
-                        </span>
-
-                                <h3>
-                                    Online Clothing Recommendation System
-                                </h3>
-
-                                <p class="project-desc">
-                                    A content-based clothing recommendation system that recommends products based on their similarity. The system uses cosine similarity to compare product characteristics.
-                                </p>
-
-                                <div class="project-tech">
-                                    <span>Django</span>
-                                    <span>Python</span>
-                                    <span>MySQL</span>
-                                    <span>Machine Learning</span>
-                                </div>
-
-                                <div class="project-desc">
-                                    <strong>Approach:</strong> Content-based filtering using cosine similarity with a Kaggle dataset.
-                                </div>
-
-                            </div>
-
-                        </div>
-
+                        @endforeach
 
                     </div>
-
 
                     <div class="swiper-pagination"></div>
 
@@ -893,109 +460,35 @@
 
                 <div class="timeline">
 
+                    @foreach ($education as $item)
+                        <div class="timeline-item">
 
-                    <div class="timeline-item">
+                            <div class="timeline-dot"></div>
 
-                        <div class="timeline-dot"></div>
+                            <div class="timeline-date">
+                                {{ $item['date'] }}
+                            </div>
 
-                        <div class="timeline-date">
-                            2026 – Present
+                            <h3>
+                                {{ $item['degree'] }}
+                            </h3>
+
+                            <h4>
+                                {{ $item['institution'] }} · {{ $item['location'] }}
+                            </h4>
+
+                            <ul>
+                                @foreach ($item['details'] as $detail)
+                                    <li>
+                                        {{ $detail }}
+                                    </li>
+                                @endforeach
+                            </ul>
+
                         </div>
-
-                        <h3>
-                            Master of Computer Application (MCA)
-                        </h3>
-
-                        <h4>
-                            Patan Multiple Campus · Patan Dhoka, Lalitpur
-                        </h4>
-
-                        <ul>
-                            <li>
-                                Expected graduation: 2028
-                            </li>
-                        </ul>
-
-                    </div>
-
-
-                    <div class="timeline-item">
-
-                        <div class="timeline-dot"></div>
-
-                        <div class="timeline-date">
-                            2021 – 2026
-                        </div>
-
-                        <h3>
-                            Bachelor of Computer Application (BCA)
-                        </h3>
-
-                        <h4>
-                            Patan Multiple Campus · Patan Dhoka, Lalitpur
-                        </h4>
-
-                        <ul>
-                            <li>
-                                Cumulative GPA: 3.40 / 4.00
-                            </li>
-                        </ul>
-
-                    </div>
-
-
-                    <div class="timeline-item">
-
-                        <div class="timeline-dot"></div>
-
-                        <div class="timeline-date">
-                            2018 – 2020
-                        </div>
-
-                        <h3>
-                            +2 Management
-                        </h3>
-
-                        <h4>
-                            Capital Secondary School · Koteshwor, Kathmandu
-                        </h4>
-
-                        <ul>
-                            <li>
-                                Cumulative GPA: 3.10 / 4.00
-                            </li>
-                        </ul>
-
-                    </div>
-
-
-                    <div class="timeline-item">
-
-                        <div class="timeline-dot"></div>
-
-                        <div class="timeline-date">
-                            2018
-                        </div>
-
-                        <h3>
-                            SEE
-                        </h3>
-
-                        <h4>
-                            Kanjirowa National School · Koteshwor, Kathmandu
-                        </h4>
-
-                        <ul>
-                            <li>
-                                Cumulative GPA: 3.05 / 4.00
-                            </li>
-                        </ul>
-
-                    </div>
-
+                    @endforeach
 
                 </div>
-
             </div>
 
         </section>
@@ -1004,7 +497,7 @@
         <!-- =========================
      Contact
 ========================= -->
-<div></div>
+        <div></div>
         <section class="section" id="contact">
             <div class="container">
                 <h2 class="section-title">
@@ -1026,8 +519,8 @@
 
                         <div class="contact-details">
                             <a href="mailto:anantapoudyal0477@gmail.com">
-                        anantapoudyal0477@gmail.com
-                    </a>
+                                anantapoudyal0477@gmail.com
+                            </a>
                         </div>
                     </div>
 
@@ -1066,7 +559,7 @@
 
     <!-- Main JS -->
 
-    <script src="{{asset('assets/viewer/js/main.js')}}"></script>
+    <script src="{{ asset('assets/viewer/js/main.js') }}"></script>
 
 </body>
 
