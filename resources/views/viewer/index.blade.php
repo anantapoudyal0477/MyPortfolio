@@ -27,7 +27,7 @@
         content="Portfolio of Ananta Poudyal, Laravel Developer and MCA student from Kathmandu, Nepal.">
     <meta property="og:image"
         content="{{ asset('assets/viewer/img/og-image.jpg') }}">
-    <meta property="og:url" content="{{ url('/') }}">
+    <meta property="og:url" content="{{ route('home') }}">
     <meta property="og:site_name" content="Ananta Poudyal Portfolio">
 
     <!-- Twitter / X -->
