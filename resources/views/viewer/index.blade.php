@@ -498,35 +498,57 @@
      Contact
 ========================= -->
         <div></div>
-        <section class="section" id="contact">
-            <div class="container">
-                <h2 class="section-title">
-                    Contact Me
-                </h2>
+     <section class="section" id="contact">
+    <div class="container">
+        <h2 class="section-title">
+            Contact Me
+        </h2>
 
-                <div class="about-grid">
+        <div class="about-grid">
 
-                    <div class="about-card">
-                        <div class="card-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
+            <!-- Email -->
+            <div class="about-card">
+                <div class="card-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
 
-                        <h3>Email</h3>
+                <h3>Email</h3>
 
-                        <p>
-                            Have a project, opportunity or collaboration in mind? Feel free to get in touch.
-                        </p>
+                <p>
+                    Have a project, opportunity or collaboration in mind? Feel free to get in touch.
+                </p>
 
-                        <div class="contact-details">
-                            <a href="mailto:anantapoudyal0477@gmail.com">
-                                anantapoudyal0477@gmail.com
-                            </a>
-                        </div>
-                    </div>
-
+                <div class="contact-details">
+                    <a href="mailto:anantapoudyal0477@gmail.com">
+                        anantapoudyal0477@gmail.com
+                    </a>
                 </div>
             </div>
-        </section>
+
+            <!-- Resume / CV -->
+            <div class="about-card">
+                <div class="card-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+
+                <h3>Resume / CV</h3>
+
+                <p>
+                    Interested in my experience and skills? You can view or download my resume.
+                </p>
+
+                <div class="contact-details">
+                    <a href="{{ asset('assets/viewer/resume/Ananta_Poudyal_Resume.pdf') }}"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View Resume <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
     </main>
 
 
