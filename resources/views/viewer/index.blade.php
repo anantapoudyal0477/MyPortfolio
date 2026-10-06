@@ -525,6 +525,7 @@
                 </div>
             </div>
 
+            {{-- 
             <!-- Resume / CV -->
             <div class="about-card">
                 <div class="card-icon">
@@ -544,7 +545,7 @@
                         View Resume <i class="fas fa-external-link-alt"></i>
                     </a>
                 </div>
-            </div>
+            </div> --}}
 
         </div>
     </div>
