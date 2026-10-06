@@ -539,7 +539,7 @@
                 </p>
 
                 <div class="contact-details">
-                    <a href="{{ asset('assets/viewer/resume/Ananta_Poudyal_Resume.pdf') }}"
+                    <a href="{{ Storage::url('resume/Ananta_Poudyal_Resume.pdf') }}"
                        target="_blank"
                        rel="noopener noreferrer">
                         View Resume <i class="fas fa-external-link-alt"></i>
